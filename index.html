@@ -9,17 +9,37 @@
 
 		#principal{
 			width: 500px;
-			background-color: blue;
+			/*background-color: blue;*/
 			text-align: center;
 			margin: 15px auto;
 			padding: 15px;
 			border-radius: 10px;
 			box-shadow: gray 5px 5px 5px;
+			/*background-image: -moz-linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+			background-image: -webkit-linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+			background-image: -o-linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);*/
+			background-image: radial-gradient(cyan 0%, transparent 20%, salmon 40%);
+			/*outline: 2px dashed blue;
+			outline-offset: 15px;*/
+			/*transform: scale(0.5);*/
+			transition: 1s ease 0.5s;
+		}
+
+		#principal:hover{
+
+			transform: rotate(5deg);
+
 		}
 
 		#titulo{
-			font: bold 36px Verdana, Geneva, sans-serif;
-			text-shadow: #0F0 3px 3px 5px;
+			font: bold 36px 'MiPropiaFuente';
+			/*text-shadow: #0F0 3px 3px 5px;*/
+			color: rgba(0, 0, 0, 0.5);
+		}
+
+		@font-face {
+			font-family: 'MiPropiaFuente';
+			src: url('BAUHS93.TTF');
 		}
 
 	</style>
