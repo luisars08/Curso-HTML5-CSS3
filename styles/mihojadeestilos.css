@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    font-size: 62.5%;
+}
+
+#titulo{
+
+    font: normal 2.4em Verdana;
+    background-image: linear-gradient(blue,aquamarine);
+    width: 35%;
+    border-radius: 10px;
+    margin: 15px auto;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    box-shadow: #00F 5px 5px 10px; /* Color DistanciaHorizontal DistanciVertical Difuminado */
+    text-shadow: white 2px 2px 3px; /* Color DH DV Dif */
+    
+}
+
+#subtitulo{
+    font: bold 1.7em Verdana;
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
+    color: black;
+}
+
+section{
+
+    width: 91%;
+    border-top: 1px dashed #999;
+    margin: 15px auto;
+
+    /*display: flex;*/
+
+}
+
+figure{
+
+    float: left;
+
+}
+
+figure img{
+
+    padding: 4px;
+    background:#666;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out 0.1s; /*Transicion de la imag que se haga mas grande al poner el raton en 0.3seg y el ease-in-out 0.1seg para el tiempo que le toma empezar el efecto*/
+    box-shadow: #999 5px 5px 10px;
+
+}
+
+figure img:hover{  /*Esto es una pseudoclase*/
+
+    transform: scale(1.2);
+
+}
+
+figcaption {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+footer{
+
+    clear: both;
+    padding-top: 100px;
+    
+}
+
+footer p{
+
+    font: Georgia, "Times New Roman", Times, serif;
+    color: #666;
+    margin: 10px 8px;
+}
