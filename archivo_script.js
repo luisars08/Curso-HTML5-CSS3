@@ -1,14 +1,18 @@
 
 function ejecuta(){
-    
-    for (var i=0; i<4; i++){
 
-        var elementos = document.querySelectorAll("#principal p");
+    var elementos = document.querySelectorAll("#principal p");
+    
+    for (var i=0; i<elementos.length; i++){
+
+        
 
         elementos[i].onclick=saludo;
+
+
     }
 
-    /*document.querySelector("#principal p:last-child").onclick=saludo;*/
+
 
 }
 
