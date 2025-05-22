@@ -1,13 +1,20 @@
 
 function ejecuta(){
+    
+    for (var i=0; i<4; i++){
 
-    document.querySelector("#principal p:last-child").onclick=saludo;
+        var elementos = document.querySelectorAll("#principal p");
+
+        elementos[i].onclick=saludo;
+    }
+
+    /*document.querySelector("#principal p:last-child").onclick=saludo;*/
 
 }
 
 function saludo() {
 
-    alert("Que hay de nuevo 1.0 ");
+    alert("Que hay de nuevo 2.0 ");
     
 }
 
