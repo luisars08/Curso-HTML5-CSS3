@@ -7,18 +7,36 @@
 
 	<script>
 
+		var imagen;
+
 		function tipo_gato(){
 
 			alert("Siames");
 		}
 
-		function daTipoGato(){
+		function manejaGato(){
 
-			document.getElementsByTagName("img")[0].onclick=tipo_gato;
+			imagen = document.getElementsByTagName("img")[0];
+
+			imagen.addEventListener("mouseover",crecer,false);
+			imagen.addEventListener("mouseout",menguar,false);
+			imagen.addEventListener("click",tipo_gato,false);
 			
 		}
 
-		window.onload=daTipoGato;
+		function crecer(){
+
+			imagen.width = 255;
+			imagen.height = 255;
+		}
+
+		function menguar(){
+
+			imagen.width = 510;
+			imagen.height = 510;
+		}
+
+		window.onload=manejaGato;
 
 	</script>
 </head>
