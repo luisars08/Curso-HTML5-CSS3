@@ -1,9 +1,11 @@
 
 function ejecuta(){
 
-    /*document.getElementsByTagName("p")[0].onclick=saludo;*/
+    for (var i=0; i<2; i++){
 
-    document.getElementById("importante").onclick=saludo;
+        var z = document.getElementsByClassName("importante")[i].onclick=saludo;
+
+    }
 
 }
 
