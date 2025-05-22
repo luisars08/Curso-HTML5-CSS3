@@ -1,17 +1,13 @@
 
 function ejecuta(){
 
-    for (var i=0; i<2; i++){
-
-        var z = document.getElementsByClassName("importante")[i].onclick=saludo;
-
-    }
+    document.querySelector("#principal p:last-child").onclick=saludo;
 
 }
 
 function saludo() {
 
-    alert("Que hay de nuevo");
+    alert("Que hay de nuevo 1.0 ");
     
 }
 
