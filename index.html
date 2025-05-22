@@ -3,33 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<script src="archivo_script.js"></script>
-	<style>
-		.importante{
-			color: red;
+	<title>Eventos HTML-5</title>
+
+	<script>
+
+		function tipo_gato(){
+
+			alert("Siames");
 		}
-	</style>
+
+		function daTipoGato(){
+
+			document.getElementsByTagName("img")[0].onclick=tipo_gato;
+			
+		}
+
+		window.onload=daTipoGato;
+
+	</script>
 </head>
 <body>
-
-	<div id="principal">
-
-		<p>Primero Pasos JavaScript</p>
-
-		<p class="importante">Ejemplo de segundo párrafo</p>
-
-		<p>Ejempolo d Tercer párrafo</p>
-
-		<p class="importante">Ejemplo de cuarto párrafo</p>
-
-		<p>Otro Párrafo Más + + </p>
-
-	</div>
-
-	<p>Ejemplo de quinto parrafo</p>
-
-	<p>Ejemplo de <span>sexto</span> parrafo</p>
-	
+	<p><img src="img/Siames.jpg"></p>
 </body>
 </html>
