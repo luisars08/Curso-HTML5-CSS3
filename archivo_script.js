@@ -1,7 +1,7 @@
 
 function ejecuta(){
 
-    var elementos = document.querySelectorAll("#principal p");
+    var elementos = document.querySelectorAll("#principal p, span");
     
     for (var i=0; i<elementos.length; i++){
 
@@ -18,7 +18,7 @@ function ejecuta(){
 
 function saludo() {
 
-    alert("Que hay de nuevo 2.0 ");
+    alert("Que hay de nuevo 3.0 ");
     
 }
 
